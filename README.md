@@ -11,9 +11,15 @@
 
 Understanding - If your familiar with the concept of LLMs, they are usually *trained on a huge corpus of data*. So, langchain lets us integrate the ***full potential of LLMs*** to make our applications / workflows more intelligent and efficient.
 
+### Usecases (*Real-world*)
+***
+- Chatbots
+- QA and Chat over Documents
+- Tabular question answering
+- Summarization / can be done over documents
+> Soon will be making the above clickable so that you can refer to the working and usecases
 
 > ***Future Updates*** - Planned Readme updates coming soon!
->> 2. usecases - (real world)
 >> 3. prerequisite before learning this
 >> 4. most useful components you must know
 >> 5. how to get started
