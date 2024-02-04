@@ -3,8 +3,6 @@ import schemas
 from humorchatbot import generate_humorous_response
 import uvicorn
 
-
-
 app = FastAPI()
 
 @app.get('/')
@@ -15,8 +13,8 @@ def home():
 def response_from_llm(request: schemas.CHAT):
     response = generate_humorous_response(request.question)
     return {
-        "your_question": f"{query.question}",
-        "answered_by_llm": f"{response.strip()}"
+        "User": request.question,
+        "humorous_guy😎": response.strip()
     }
 
 
