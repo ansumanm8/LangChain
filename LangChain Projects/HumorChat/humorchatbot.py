@@ -1,10 +1,11 @@
 from langchain_openai import OpenAI
 from langchain.prompts import PromptTemplate
+from dotenv import load_dotenv
 import os
 
-os.environ["OPENAI_API_KEY"] = "*********Add your OpenAI-API-key Here*************"
+load_dotenv()
 
-llm = OpenAI(openai_api_key=os.environ["OPENAI_API_KEY"], temperature=0.6)
+llm = OpenAI(openai_api_key=os.getenv("OPENAI_API_KEY"), temperature=0.7)
 
 def generate_humorous_response(user_question: str) -> str:
     template = """
