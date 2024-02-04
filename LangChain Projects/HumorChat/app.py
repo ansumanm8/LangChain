@@ -1,10 +1,9 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+import schemas
 from humorchatbot import generate_humorous_response
 import uvicorn
 
-class Question(BaseModel):
-    question: str
+
 
 app = FastAPI()
 
@@ -13,8 +12,8 @@ def home():
     return {"greetings":"Welcome to HumorChat. add '/docs' at the end of the URL to get to the API Swagger"}
 
 @app.post('/generate_humor_response')
-def response_from_llm(query: Question):
-    response = generate_humorous_response(query.question)
+def response_from_llm(request: schemas.CHAT):
+    response = generate_humorous_response(request.question)
     return {
         "your_question": f"{query.question}",
         "answered_by_llm": f"{response.strip()}"
