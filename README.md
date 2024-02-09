@@ -24,4 +24,5 @@ Understanding - If your familiar with the concept of LLMs, they are usually *tra
 >> 4. most useful components you must know
 >> 5. how to get started
 >> 6. my perspective of how to approach the use case
->> 7. RAG Pipelines - Llamaindex, Multivectort, ParentDocument, Multiquery, Ensemble 
+>> 7. RAG Pipelines - Llamaindex, Multivectort, ParentDocument, Multiquery, Ensemble
+>> 8. Storage solutions and Deployment
